@@ -1,0 +1,145 @@
+DELETE FROM TIPO;
+
+DELETE FROM CENSURA;
+
+DELETE FROM PELICULAS;
+
+DELETE FROM CLIENTES;
+
+DELETE FROM PELICEN;
+
+DELETE FROM PELITIP;
+
+DELETE FROM ARRIENDO;
+
+/*==============================================================*/
+/* Generate test data for the table "ARRIENDO".                 */
+/*==============================================================*/
+INSERT INTO ARRIENDO (CODPEL, CODCLI, FECARRIENDO, FECDEV, DEVUELTO) VALUES (1, 6, '17-10-14', '17-11-14', true);
+
+INSERT INTO ARRIENDO (CODPEL, CODCLI, FECARRIENDO, FECDEV, DEVUELTO) VALUES (2, 8, '12-07-14', '12-08-14', false);
+
+INSERT INTO ARRIENDO (CODPEL, CODCLI, FECARRIENDO, FECDEV, DEVUELTO) VALUES (3, 5, '15-02-14', '15-03-14', false);
+
+INSERT INTO ARRIENDO (CODPEL, CODCLI, FECARRIENDO, FECDEV, DEVUELTO) VALUES (4, 7, '08-10-14', '08-11-14', false);
+
+INSERT INTO ARRIENDO (CODPEL, CODCLI, FECARRIENDO, FECDEV, DEVUELTO) VALUES (5, 2, '25-11-14', '25-12-14', true);
+
+INSERT INTO ARRIENDO (CODPEL, CODCLI, FECARRIENDO, FECDEV, DEVUELTO) VALUES (6, 9, '11-01-14', '11-02-14', true);
+
+INSERT INTO ARRIENDO (CODPEL, CODCLI, FECARRIENDO, FECDEV, DEVUELTO) VALUES (7, 1, '14-03-14', '14-04-14', false);
+
+INSERT INTO ARRIENDO (CODPEL, CODCLI, FECARRIENDO, FECDEV, DEVUELTO) VALUES (8, 3, '14-08-14', '14-09-14', true);
+
+INSERT INTO ARRIENDO (CODPEL, CODCLI, FECARRIENDO, FECDEV, DEVUELTO) VALUES (9, 4, '16-10-14', '16-11-14', false);
+
+INSERT INTO ARRIENDO (CODPEL, CODCLI, FECARRIENDO, FECDEV, DEVUELTO) VALUES (10, 10, '22-08-14', '22-09-14', true );
+
+/*==============================================================*/
+/* Generate test data for the table "PELITIP".                  */
+/*==============================================================*/
+INSERT INTO PELITIP (CODPEL, CODTIPO) VALUES (1, 1);
+
+INSERT INTO PELITIP (CODPEL, CODTIPO) VALUES (2, 3);
+
+INSERT INTO PELITIP (CODPEL, CODTIPO) VALUES (3, 2);
+
+INSERT INTO PELITIP (CODPEL, CODTIPO) VALUES (4, 1);
+
+INSERT INTO PELITIP (CODPEL, CODTIPO) VALUES (5, 1);
+
+INSERT INTO PELITIP (CODPEL, CODTIPO) VALUES (6, 4);
+
+INSERT INTO PELITIP (CODPEL, CODTIPO) VALUES (7, 2);
+
+INSERT INTO PELITIP (CODPEL, CODTIPO) VALUES (8, 3);
+
+INSERT INTO PELITIP (CODPEL, CODTIPO) VALUES (9, 1);
+
+INSERT INTO PELITIP (CODPEL, CODTIPO) VALUES (10, 2);
+
+/*==============================================================*/
+/* Generate test data for the table "PELICEN".                  */
+/*==============================================================*/
+INSERT INTO PELICEN (CODPEL, CODCEN) VALUES (6, 1);
+
+INSERT INTO PELICEN (CODPEL, CODCEN) VALUES (5, 2);
+
+INSERT INTO PELICEN (CODPEL, CODCEN) VALUES (3, 2);
+
+INSERT INTO PELICEN (CODPEL, CODCEN) VALUES (10, 3);
+
+INSERT INTO PELICEN (CODPEL, CODCEN) VALUES (7, 3);
+
+INSERT INTO PELICEN (CODPEL, CODCEN) VALUES (2, 2);
+
+INSERT INTO PELICEN (CODPEL, CODCEN) VALUES (8, 1);
+
+INSERT INTO PELICEN (CODPEL, CODCEN) VALUES (4, 2);
+
+INSERT INTO PELICEN (CODPEL, CODCEN) VALUES (9, 1);
+
+INSERT INTO PELICEN (CODPEL, CODCEN) VALUES (1, 3);
+
+/*==============================================================*/
+/* Generate test data for the table "CLIENTES".                 */
+/*==============================================================*/
+INSERT INTO CLIENTES (CODCLI, NOMCLI, TELCLI, DIRCLI, COMCLI) VALUES (6, 'juan', 222, 'isla de pascua', 'puente alto');
+
+INSERT INTO CLIENTES (CODCLI, NOMCLI, TELCLI, DIRCLI, COMCLI) VALUES (8, 'pepito', 666, 'rio mapocho', 'san miguel');
+
+INSERT INTO CLIENTES (CODCLI, NOMCLI, TELCLI, DIRCLI, COMCLI) VALUES (5, 'pepita', 111, 'pasaje pepita 23', 'san miguel');
+
+INSERT INTO CLIENTES (CODCLI, NOMCLI, TELCLI, DIRCLI, COMCLI) VALUES (7, 'diego', 999, 'pasaje polanco 12', 'chicureo');
+
+INSERT INTO CLIENTES (CODCLI, NOMCLI, TELCLI, DIRCLI, COMCLI) VALUES (2, 'chelo', 555, 'pasaje marcelo 32', 'las condes');
+
+INSERT INTO CLIENTES (CODCLI, NOMCLI, TELCLI, DIRCLI, COMCLI) VALUES (9, 'oscar', 777, 'pasaje cerda 44', 'vitacura');
+
+INSERT INTO CLIENTES (CODCLI, NOMCLI, TELCLI, DIRCLI, COMCLI) VALUES (1, 'pepe', 333, 'pasaje alemania 99', 'san miguel');
+
+INSERT INTO CLIENTES (CODCLI, NOMCLI, TELCLI, DIRCLI, COMCLI) VALUES (3, 'rosario', 888, 'vicuña 33', 'san miguel');
+
+INSERT INTO CLIENTES (CODCLI, NOMCLI, TELCLI, DIRCLI, COMCLI) VALUES (4, 'carla', 444, 'pasaje carla 3', 'puente alto');
+
+INSERT INTO CLIENTES (CODCLI, NOMCLI, TELCLI, DIRCLI, COMCLI) VALUES (10, 'rondamon', 000, 'pasaje asdf 43 ', 'puente alto');
+
+/*==============================================================*/
+/* Generate test data for the table "PELICULAS".                */
+/*==============================================================*/
+INSERT INTO PELICULAS (CODPEL, NOMPEL, PROTAGONISTA, ANO) VALUES (9, 'phineas y ferb', 'diego polanco', 2010);
+INSERT INTO PELICULAS (CODPEL, NOMPEL, PROTAGONISTA, ANO) VALUES (8, 'pelicula 8', 'actor 8', 2012);
+INSERT INTO PELICULAS (CODPEL, NOMPEL, PROTAGONISTA, ANO) VALUES (7, 'pelicula 7', 'actor 7', 2010);
+INSERT INTO PELICULAS (CODPEL, NOMPEL, PROTAGONISTA, ANO) VALUES (6, 'pelicula 6', 'actor 6', 2004);
+INSERT INTO PELICULAS (CODPEL, NOMPEL, PROTAGONISTA, ANO) VALUES (5, 'pelicula 5', 'varios', 2011);
+INSERT INTO PELICULAS (CODPEL, NOMPEL, PROTAGONISTA, ANO) VALUES (4, 'pelicula 4', 'actor 4', 2012);
+INSERT INTO PELICULAS (CODPEL, NOMPEL, PROTAGONISTA, ANO) VALUES (3, 'pelicula 3', 'actor 3', 2013);
+INSERT INTO PELICULAS (CODPEL, NOMPEL, PROTAGONISTA, ANO) VALUES (2, 'pelicula 2', 'varios', 2010);
+INSERT INTO PELICULAS (CODPEL, NOMPEL, PROTAGONISTA, ANO) VALUES (1, 'pelicula 1', 'actor 1', 2010);
+INSERT INTO PELICULAS (CODPEL, NOMPEL, PROTAGONISTA, ANO) VALUES (10, 'pelicula 10', 'actor 10', 2010);
+
+
+/*==============================================================*/
+/* Generate test data for the table "CENSURA".                  */
+/*==============================================================*/
+INSERT INTO CENSURA (CODCEN, NOMCEN) VALUES (1, 'mayores 13');
+
+INSERT INTO CENSURA (CODCEN, NOMCEN) VALUES (2, ' mayores 15');
+
+INSERT INTO CENSURA (CODCEN, NOMCEN) VALUES (3, 'mayores 18');
+
+
+
+/*==============================================================*/
+/* Generate test data for the table "TIPO".                     */
+/*==============================================================*/
+INSERT INTO TIPO (CODTIPO, NOMTIPO) VALUES (1, 'drama');
+
+INSERT INTO TIPO (CODTIPO, NOMTIPO) VALUES (2, 'accion');
+
+INSERT INTO TIPO (CODTIPO, NOMTIPO) VALUES (3, 'comedia');
+
+INSERT INTO TIPO (CODTIPO, NOMTIPO) VALUES (4, 'ciencia ficcion');
+
+
+
